@@ -13,5 +13,16 @@ public class HomeController {
         model.addAttribute("nombre",name);
         return "home";
     }
+    @GetMapping("/singleBlog")
+    public String singleBlog(@RequestParam(name= "nombre", required = false, defaultValue = "Gia Virtual") String name, Model model){
+        model.addAttribute("nombre",name);
+        return "singleBlog";
+    }
+
+    @GetMapping("/login")
+    public String  login(@RequestParam(name= "nombre", required = false, defaultValue = "Gia Virtual") String name, Model model){
+        model.addAttribute("nombre",name);
+        return "login";
+    }
 
 }
