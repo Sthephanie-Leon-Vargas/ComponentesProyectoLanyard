@@ -1,83 +1,139 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="robots" content="noindex, nofollow">
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <title>Lanyard - Blog</title>
+    <meta charset="UTF-8">
+    <title>Lanyard - Single Blog</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Inter:wght@400;500&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Inter:wght@400;500&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/vendor/aos/aos.css" rel="stylesheet">
 
-  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Template Main CSS Files-->
+    <link th:href="@{/css/variables.css}" rel="stylesheet">
+    <link th:href="@{/css/main.css}" rel="stylesheet">
 
-  <!-- Template Main CSS Files-->
-  <link th:href="@{/css/variables.css}" rel="stylesheet">
-  <link th:href="@{/css/main.css}" rel="stylesheet">
 
 </head>
 <body>
-<header id="header" class="header d-flex align-items-center fixed-top">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <!-- Navigation -->
+    <div th:insert="home::header"></div>
 
-    <a href="login.html" class="logo d-flex align-items-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <img src="/img/logo.png" alt="">
-      <h1>Lanyard Blog</h1>
-    </a>
+    <!-- Page Content -->
+    <div class="container">
+        <main id="main">
 
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a href="login.html">Iniciar Sesión</a></li>
-        <li><a href="register.html">Registrarse</a></li>
-        <li class="dropdown"><a href="category.html"><span>Categorias</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-          <ul>
-            <li class="dropdown"><a href="#"><span>Conciertos</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-              <ul>
-                <li><a href="#">Exteriores</a></li>
-                <li><a href="#">Interiores</a></li>
+            <section class="single-post-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 post-content aos-init aos-animate" data-aos="fade-up">
 
-              </ul>
-            </li>
-            <li><a href="#">Festivales</a></li>
-            <li><a href="#">Teatro</a></li>
-            <li><a href="#">Eventos Deportivos</a></li>
-          </ul>
-        </li>
+                            <!-- ======= Single Post Content ======= -->
+                            <div class="single-post">
+                                <div class="post-meta"><span class="date">Concierto</span> <span class="mx-1">•</span> <span>Oct 31, 23</span></div>
+                                <h1 class="mb-5">Red Hot Chili Pepepers en Costa Rica</h1>
+                                <p><span class="firstcharacter">L</span>os Red Hot Chili Peppers ofrecerán un recorrido por sus grandes éxitos, así como material de los álbumes más recientes de la banda, “Unlimited Love” y “Return of the Dream Canteen”, lanzados de forma consecutiva en el año 2022</p>
+                                <p>La apertura de las puertas será a las 3 p.m, el concierto arranca a las 6 p.m con Saint Cecilia como telonero y a partir de las 7:45 saldrán los Red Hot Chili Peppers.</p>
+                                <p>Los precios de las entradas oscilan entre los 25.900 colones (48 dólares) y los 82.600 colones (153 dólares), según informó la productora.</p>
+                                <figure class="my-2">
+                                    <img src="img/Red.jpg" alt="" class="img-fluid">
+                                </figure>
+                                <div class="post-meta"><span class="date">Productora</span> <span class="mx-1">•</span> <span>SD Concerts</span></div>
+                                <div class="post-meta"><span class="date">Lugar</span> <span class="mx-1">•</span> <span>Estadio Nacional</span></div>
+                            </div>
 
-        <li><a href="about.html">Sobre nosotros</a></li>
-        <li><a href="contact.html">Contactenos</a></li>
-      </ul>
-    </nav>
+                            <!-- End Single Post Content -->
 
-    <div class="position-relative">
-      <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
-      <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
-      <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+                            <!-- ======= Comments ======= -->
+                            <div class="comments">
+                                <h5 class="comment-title py-4">2 Comments</h5>
+                                <div class="comment d-flex mb-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar avatar-sm rounded-circle">
+                                            <img class="avatar-img" src="img/person-5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2 ms-sm-3">
+                                        <div class="comment-meta d-flex align-items-baseline">
+                                            <h6 class="me-2">Massy Granados</h6>
+                                            <span class="text-muted">2d</span>
+                                        </div>
+                                        <div class="comment-body">
+                                            Escuché a un amigo decir que hicieron playback, será cierto?
+                                        </div>
 
-      <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
-      <i class="bi mobile-nav-toggle bi-list"></i>
+                                        <div class="comment-replies bg-light p-3 mt-3 rounded">
+                                            <h6 class="comment-replies-title mb-4 text-muted text-uppercase">2 replies</h6>
 
-      <!-- ======= Search Form ======= -->
-      <div class="search-form-wrap js-search-form-wrap">
-        <form action="search-result.html" class="search-form">
-          <span class="icon bi-search"></span>
-          <input type="text" placeholder="Search" class="form-control">
-          <button class="btn js-search-close"><span class="bi-x"></span></button>
-        </form>
-      </div><!-- End Search Form -->
+                                            <div class="reply d-flex mb-4">
+                                                <div class="flex-shrink-0">
+                                                    <div class="avatar avatar-sm rounded-circle">
+                                                        <img class="avatar-img" src="img/person-4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-2 ms-sm-3">
+                                                    <div class="reply-meta d-flex align-items-baseline">
+                                                        <h6 class="mb-0 me-2">Poncho P.</h6>
+                                                        <span class="text-muted">2d</span>
+                                                    </div>
+                                                    <div class="reply-body">
+                                                        JA con todas las metidas de patas jajaja. Jamás
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment d-flex">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar avatar-sm rounded-circle">
+                                            <img class="avatar-img" src="img/person-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex-shrink-1 ms-2 ms-sm-3">
+                                        <div class="comment-meta d-flex">
+                                            <h6 class="me-2">Santiago Roberts</h6>
+                                            <span class="text-muted">4d</span>
+                                        </div>
+                                        <div class="comment-body">
+                                            Sigo soñando, viendo las fotos y videos. Espere 12 años y fui tan feliz. Gracias vida
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End Comments -->
+
+                            <!-- ======= Comments Form ======= -->
+                            <div class="row justify-content-center mt-5">
+
+                                <div class="col-lg-12">
+                                    <h5 class="comment-title">Deja tu comentario</h5>
+                                    <div class="row">
+
+                                        <div class="col-12 mb-3">
+
+                                            <textarea class="form-control" id="comment-message"  cols="10" rows="10"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="submit" class="btn btn-primary" value="Comentar">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End Comments Form -->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
     </div>
+    <!-- Footer -->
+    <div th:insert="home::footer"></div>
 
-  </div>
-
-</header>
 </body>
 </html>
