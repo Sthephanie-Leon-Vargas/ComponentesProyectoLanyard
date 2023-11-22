@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="robots" content="noindex, nofollow">
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <title>Lanyard - Home</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="robots" content="noindex, nofollow">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <title>Lanyard - Login</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Inter:wght@400;500&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Inter:wght@400;500&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 
-  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/vendor/aos/aos.css" rel="stylesheet">
 
-  <!-- Template Main CSS Files-->
-  <link th:href="@{/css/variables.css}" rel="stylesheet">
-  <link th:href="@{/css/main.css}" rel="stylesheet">
+    <!-- Template Main CSS Files-->
+    <link th:href="@{/css/variables.css}" rel="stylesheet">
+    <link th:href="@{/css/main.css}" rel="stylesheet">
 
 </head>
 <body>
 <header id="header" class="header d-flex align-items-center fixed-top">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-    <a href="login.html" class="logo d-flex align-items-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <img src="/img/logo.png" alt="">
-      <h1>Lanyard Blog</h1>
-    </a>
+        <a href="login.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="/img/logo.png" alt="">
+            <h1>Lanyard Blog</h1>
+        </a>
 
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a href="login.html">Iniciar Sesión</a></li>
-        <li><a href="register.html">Registrarse</a></li>
-        <li class="dropdown"><a href="category.html"><span>Categorias</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-          <ul>
-            <li class="dropdown"><a href="#"><span>Conciertos</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-              <ul>
-                <li><a href="#">Exteriores</a></li>
-                <li><a href="#">Interiores</a></li>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="register.html">Registrarse</a></li>
+                <li class="dropdown"><a href="category.html"><span>Categorias</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul>
+                        <li class="dropdown"><a href="#"><span>Conciertos</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                            <ul>
+                                <li><a href="#">Exteriores</a></li>
+                                <li><a href="#">Interiores</a></li>
 
-              </ul>
-            </li>
-            <li><a href="#">Festivales</a></li>
-            <li><a href="#">Teatro</a></li>
-            <li><a href="#">Eventos Deportivos</a></li>
-          </ul>
-        </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Festivales</a></li>
+                        <li><a href="#">Teatro</a></li>
+                        <li><a href="#">Eventos Deportivos</a></li>
+                    </ul>
+                </li>
 
-        <li><a href="about.html">Sobre nosotros</a></li>
-        <li><a href="contact.html">Contactenos</a></li>
-      </ul>
-    </nav>
+                <li><a href="about.html">Sobre nosotros</a></li>
+                <li><a href="contact.html">Contactenos</a></li>
+            </ul>
+        </nav>
 
-    <div class="position-relative">
-      <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
-      <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
-      <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+        <div class="position-relative">
+            <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+            <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+            <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
 
-      <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
-      <i class="bi mobile-nav-toggle bi-list"></i>
+            <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+            <i class="bi mobile-nav-toggle bi-list"></i>
 
-      <!-- ======= Search Form ======= -->
-      <div class="search-form-wrap js-search-form-wrap">
-        <form action="search-result.html" class="search-form">
-          <span class="icon bi-search"></span>
-          <input type="text" placeholder="Search" class="form-control">
-          <button class="btn js-search-close"><span class="bi-x"></span></button>
-        </form>
-      </div><!-- End Search Form -->
+            <!-- ======= Search Form ======= -->
+            <div class="search-form-wrap js-search-form-wrap">
+                <form action="search-result.html" class="search-form">
+                    <span class="icon bi-search"></span>
+                    <input type="text" placeholder="Search" class="form-control">
+                    <button class="btn js-search-close"><span class="bi-x"></span></button>
+                </form>
+            </div><!-- End Search Form -->
+
+        </div>
 
     </div>
-
-  </div>
 
 </header>
 
