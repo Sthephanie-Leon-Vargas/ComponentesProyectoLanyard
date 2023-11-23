@@ -10,7 +10,7 @@ import org.springframework.ui.Model;
 
 @RequestMapping("/index")
 public class HomeController {
-    @GetMapping("")
+    @GetMapping("/index")
     public String index (@RequestParam(name= "nombre", required = false, defaultValue = "Gia Virtual") String name, Model model){
         model.addAttribute("nombre",name);
         return "index";
