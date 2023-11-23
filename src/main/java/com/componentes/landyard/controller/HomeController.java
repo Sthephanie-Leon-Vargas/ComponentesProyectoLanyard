@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.ui.Model;
 
-
 @Controller
-@RequestMapping("/home")
+
+@RequestMapping("/index")
 public class HomeController {
     @GetMapping("")
-    public String home(@RequestParam(name= "nombre", required = false, defaultValue = "Gia Virtual") String name, Model model){
+    public String index (@RequestParam(name= "nombre", required = false, defaultValue = "Gia Virtual") String name, Model model){
         model.addAttribute("nombre",name);
-        return "home";
+        return "index";
     }
 
 
