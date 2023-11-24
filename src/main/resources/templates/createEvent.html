@@ -43,10 +43,10 @@
     </div>
     <!-- FORM -->
 
-    <form id="form-event" class="container p-3 m-3">
+    <form id="form_event" class="container p-3 m-3">
         <div class="date p-2" aria-label="3 / 4">
-            <label for="event-date">Fecha del Evento</label>
-            <input type="date" id="event-date" required>
+            <label for="text_date">Fecha del Evento</label>
+            <input type="date" id="text_date" required>
         </div>
 
         <div class="name p-2" aria-label="3 / 4">
@@ -70,8 +70,8 @@
             </div>
 
         <div>
-            <button type="submit" id="btn-create" class="btn btn-success" aria-label="3 / 4">Crear</button>
-            <button type="cancel" id="btn-cancelar" class="btn btn-danger" aria-label="3 / 4">Cancelar</button>
+            <button type="button" id="btn-add" class="btn btn-success" >Agregar</button>
+            <button type="button" id="btn-cancel" class="btn btn-danger" >Cancelar</button>
         </div>
     </form>
 </div>
@@ -89,7 +89,12 @@
         <script src="/vendor/aos/aos.js"></script>
         <script src="/vendor/php-email-form/validate.js"></script>
         <!-- Template Main JS File -->
-        <script th:src="@{/js/main.js}"></script>
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P7JSYB1CSP"></script>
+
+    <!-- JS Controlador y Servicio -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script th:src="@{/js/event.js}"></script>
+
 </body>
 </html>

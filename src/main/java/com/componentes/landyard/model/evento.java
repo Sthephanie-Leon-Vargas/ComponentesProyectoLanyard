@@ -1,8 +1,6 @@
 package com.componentes.landyard.model;
-import jakarta.persistence.Entity;
 import java.util.Date;
 
-@Entity
 public class evento {
     private Date date;
     private String name;
