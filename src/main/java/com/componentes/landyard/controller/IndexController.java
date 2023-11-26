@@ -5,10 +5,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.ui.Model;
 
 @Controller
-public class HomeController {
+public class IndexController {
     @GetMapping("/index")
-    public String index (@RequestParam(name= "nombre", required = false, defaultValue = "Gia Virtual") String name, Model model){
-        model.addAttribute("nombre",name);
+    public String index (Model model){
         return "index";
     }
 
