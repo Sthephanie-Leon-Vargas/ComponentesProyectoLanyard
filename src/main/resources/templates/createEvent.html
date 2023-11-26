@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Evento</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Inter:wght@400;500&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Template Main CSS Files-->
+    <link th:href="@{/css/variables.css}" rel="stylesheet">
+    <link th:href="@{/css/main.css}" rel="stylesheet">
+    <!--FORMULARIOS-->
+
+
+</head>
+
+
+<!-- Barra del Menu Principal-->
+<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0" class="">
+<header id="header" class="header d-flex align-items-center fixed-top" th:fragment="headers">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a  th:href="@{/index}" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="/img/logo.png" alt="">
+            <h1>Lanyard Blog</h1>
+        </a>
+        <h4><a th:href="@{/index}">Regresar > </a></h4>
+    </div>
+</header>
+<!-- FIN Barra del Menu Principal-->
+
+
+<div class="container p-5 m-5">
+    <div class="mx-auto" style="width: 200px;">
+    <h3>Crear Evento</h3>
+    </div>
+    <!-- FORM -->
+
+    <form id="form_event" class="container p-3 m-3">
+        <div class="date p-2" aria-label="3 / 4">
+            <label for="text_date">Fecha del Evento</label>
+            <input type="date" id="text_date" required>
+        </div>
+
+        <div class="name p-2" aria-label="3 / 4">
+            <label for="name">Nombre del Evento</label>
+            <input type="text" id="name" autocomplete="off" required>
+        </div>
+
+        <div class="producer p-2" aria-label="3 / 4">
+            <label for="producer">Productora</label>
+            <input type="text" id="producer" autocomplete="off" required>
+        </div>
+
+        <div class="venue p-2" aria-label="3 / 4">
+            <label for="venue">Lugar del Evento</label>
+            <input type="text" id="venue" autocomplete="off" required>
+        </div>
+
+        <div class="picture p-2" aria-label="3 / 4">
+        <label for="picture">Imagen del evento:</label>
+        <input type="file" id="picture" name="picture" accept="image/png, image/jpeg" />
+            </div>
+
+        <div>
+            <button type="button" id="btn-add" class="btn btn-success" >Agregar</button>
+            <button type="button" id="btn-cancel" class="btn btn-danger" >Cancelar</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+<!-- SCRIPTS-->
+        <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="/vendor/aos/aos.js"></script>
+        <script src="/vendor/php-email-form/validate.js"></script>
+        <!-- Template Main JS File -->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P7JSYB1CSP"></script>
+
+    <!-- JS Controlador y Servicio -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script th:src="@{/js/event.js}"></script>
+
+</body>
+</html>
