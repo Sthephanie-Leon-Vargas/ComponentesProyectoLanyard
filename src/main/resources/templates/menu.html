@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lanyard - Menu</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Inter:wght@400;500&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS Files-->
+  <link th:href="@{/css/variables.css}" rel="stylesheet">
+  <link th:href="@{/css/main.css}" rel="stylesheet">
+
+
+</head>
+<body>
+<!-- Navigation -->
+<div th:insert="home::header"></div>
+
+<!-- Page Content -->
+<div class="container">
+  <h1> Aqui va el diseño </h1>
+  <table>
+    <tr>
+      <td>Nombre Evento</td>
+      <td>Descripcion</td>
+      <td>Lugar</td>
+      <td>Productora</td>
+    </tr>
+    <tr th:each="evento: ${Evento}">
+      <td th:tex="${evento.EventoID}">Evento Nombre</td>
+      <td th:tex="${evento.Descripcion}">Descripcion</td>
+      <td th:tex="${evento.Lugar}">Lugar</td>
+      <td th:tex="${evento.Productora}">Productora</td>
+    </tr>
+  </table>
+
+</div>
+<!-- Footer -->
+<div th:insert="home::footer"></div>
+
+</body>
+</html>
