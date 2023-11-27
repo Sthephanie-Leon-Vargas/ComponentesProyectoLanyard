@@ -1,8 +1,5 @@
 package com.componentes.landyard.config;
-
-
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
-
 import org.springframework.context.annotation.Configuration;
 import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
