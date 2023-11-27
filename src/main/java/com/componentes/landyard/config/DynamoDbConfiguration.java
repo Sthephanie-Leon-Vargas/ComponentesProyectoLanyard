@@ -16,9 +16,9 @@ public class DynamoDbConfiguration {
 
     @Value("https://dynamodb.us-east-1.amazonaws.com")
     private String dynamoDbEndpoint;
-    @Value("AKIAUGATWKYBQVJZ2KGJ")
+    @Value("***")
     private String awsAccessKey;
-    @Value("ClMjrIFNukC7xbQJDgs701s79DfH7DW9IB71trcv")
+    @Value("***")
     private String awsSecretKey;
 
     @Bean
