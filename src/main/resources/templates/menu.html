@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lanyard - Menu</title>
+  <title>Lanyard - Registro</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -27,20 +27,6 @@
 <!-- Page Content -->
 <div class="container">
   <h1> Aqui va el diseño </h1>
-  <table>
-    <tr>
-      <td>Nombre Evento</td>
-      <td>Descripcion</td>
-      <td>Lugar</td>
-      <td>Productora</td>
-    </tr>
-    <tr th:each="evento: ${Evento}">
-      <td th:tex="${evento.EventoID}">Evento Nombre</td>
-      <td th:tex="${evento.Descripcion}">Descripcion</td>
-      <td th:tex="${evento.Lugar}">Lugar</td>
-      <td th:tex="${evento.Productora}">Productora</td>
-    </tr>
-  </table>
 
 </div>
 <!-- Footer -->
